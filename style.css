@@ -7,21 +7,57 @@ body {
   text-decoration: none;
 }
 
+h2 {
+  margin-top: 6rem;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
 /* Navigasi */
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px;
-  position: sticky;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 9999;
   border-bottom: 2px solid;
   background-color: #e0f4ff;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+nav a:hover {
+  text-decoration: underline;
 }
 
 .logo {
   font-size: 2rem;
   font-weight: 700;
   color: red;
+}
+
+a.tombol {
+  background: #3f72af;
+  border-radius: 8px;
+  margin: 20px;
+  padding: 10px 15px 10px 15px;
+  color: #ffffff;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+a.tombol:hover {
+  background: rgb(72, 72, 170);
 }
 
 .logo span {
@@ -62,9 +98,13 @@ nav {
   margin: 0;
 }
 
-.bagian-kiri h2 a {
+.bagian-kiri a {
   text-decoration: none;
   color: black;
+}
+
+.bagian-kiri a:hover {
+  text-decoration: underline
 }
 
 /* Isi Bagian Tengah */
@@ -72,8 +112,9 @@ nav {
   text-align: justify;
   flex: 3;
   padding: 0 1rem;
-  border-left: 1px solid;
-  border-right: 1px solid;
+  border-top: 1px solid;
+  /* border-left: 1px solid;
+  border-right: 1px solid; */
 }
 
 .bagian-tengah img {
@@ -82,7 +123,7 @@ nav {
 
 .bagian-tengah a {
   font-weight: 700;
-  color: red;
+  text-decoration: none;
 }
 
 /* Isi Bagian Bawah */
@@ -94,6 +135,10 @@ nav {
 
 .informasi-kontak {
   text-align: center;
+}
+
+.informasi-kontak a:hover {
+  text-decoration: underline;
 }
 
 /* Responsif untuk HP */
@@ -109,9 +154,14 @@ nav {
     font-weight: 700;
     text-align: center;
   }
-  .bagian-kiri {
-    display: none;
+
+.bagian-dalam-halaman-utama{
+  display: inline-block;
   }
+
+  /* .bagian-kiri {
+    display: none;
+  } */
   .bagian-tengah img {
     width: 20rem;
   }
