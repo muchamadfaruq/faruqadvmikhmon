@@ -1,0 +1,121 @@
+/* Reset CSS */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  color: black;
+  text-decoration: none;
+}
+
+/* Navigasi */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  position: sticky;
+  border-bottom: 2px solid;
+  background-color: #e0f4ff;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: 700;
+  color: red;
+}
+
+.logo span {
+  color: blue;
+}
+
+.logo p {
+  font-size: 1rem;
+  color: black;
+  text-align: center;
+  margin: 0;
+}
+
+.menu a {
+  padding: 16px;
+  font-size: larger;
+  font-weight: 700;
+}
+
+/* Isi */
+.halaman-utama {
+  padding: 0;
+  margin: 0;
+}
+
+.judul-isi-halaman h1 {
+  text-align: center;
+}
+
+.bagian-dalam-halaman-utama {
+  display: flex;
+  padding: 0 1.5rem;
+}
+
+/* Isi Bagian Kiri */
+.bagian-kiri {
+  padding: 1rem;
+  margin: 0;
+}
+
+.bagian-kiri h2 a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Isi Bagian Tengah */
+.bagian-tengah {
+  text-align: justify;
+  flex: 3;
+  padding: 0 1rem;
+  border-left: 1px solid;
+  border-right: 1px solid;
+}
+
+.bagian-tengah img {
+  width: 40rem;
+}
+
+.bagian-tengah a {
+  font-weight: 700;
+  color: red;
+}
+
+/* Isi Bagian Bawah */
+.bagian-bawah {
+  border-top: 2px solid;
+  padding: 1rem 1.5rem;
+  background-color: #e0f4ff;
+}
+
+.informasi-kontak {
+  text-align: center;
+}
+
+/* Responsif untuk HP */
+@media only screen and (min-width: 200px) and (max-width: 1200px) {
+  body {
+    font-size: 80%;
+    padding: 0;
+    margin: 0;
+  }
+  .logo,
+  span {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+  }
+  .bagian-kiri {
+    display: none;
+  }
+  .bagian-tengah img {
+    width: 20rem;
+  }
+  .menu {
+    display: none;
+  }
+}
